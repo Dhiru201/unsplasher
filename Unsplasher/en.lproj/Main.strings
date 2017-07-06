@@ -1,0 +1,180 @@
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "0Ya-mj-hGS"; */
+"0Ya-mj-hGS.text" = "- - - -";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "3Ip-cU-7f5"; */
+"3Ip-cU-7f5.text" = "- - - -";
+
+/* Class = "UILabel"; text = "LIKES"; ObjectID = "6vw-Rq-sQ9"; */
+"6vw-Rq-sQ9.text" = "LIKES";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "9wc-Zy-QnC"; */
+"9wc-Zy-QnC.text" = "- - - -";
+
+/* Class = "UITableViewSection"; headerTitle = "Help"; ObjectID = "Aj9-3i-8lN"; */
+"Aj9-3i-8lN.headerTitle" = "Help";
+
+/* Class = "UILabel"; text = "Dhirendra Kumar Verma"; ObjectID = "CHP-zo-THZ"; */
+"CHP-zo-THZ.text" = "Dhirendra Kumar Verma";
+
+/* Class = "UILabel"; text = "Bio"; ObjectID = "CTs-r3-LVV"; */
+"CTs-r3-LVV.text" = "Bio";
+
+/* Class = "UILabel"; text = "Collection # 100"; ObjectID = "Cth-7b-Nr2"; */
+"Cth-7b-Nr2.text" = "Collection # 100";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "Dgx-SN-kLJ"; */
+"Dgx-SN-kLJ.text" = "- - - -";
+
+/* Class = "UITabBarItem"; title = "New"; ObjectID = "EBT-OH-5d6"; */
+"EBT-OH-5d6.title" = "New";
+
+/* Class = "UILabel"; text = "published_at: 2017-04-24"; ObjectID = "Fk2-hJ-1j4"; */
+"Fk2-hJ-1j4.text" = "published_at: 2017-04-24";
+
+/* Class = "UILabel"; text = "collectionName"; ObjectID = "Goe-dw-O2G"; */
+"Goe-dw-O2G.text" = "collectionName";
+
+/* Class = "UILabel"; text = "12345 Photos"; ObjectID = "HdO-IH-oET"; */
+"HdO-IH-oET.text" = "12345 Photos";
+
+/* Class = "UILabel"; text = "He was born on a very cold day,He was born on a very cold day,He was born on a very cold day,He was born on a very cold day"; ObjectID = "Hge-Z3-2lM"; */
+"Hge-Z3-2lM.text" = "He was born on a very cold day,He was born on a very cold day,He was born on a very cold day,He was born on a very cold day";
+
+/* Class = "UINavigationItem"; title = "Credits"; ObjectID = "IrX-iV-lPd"; */
+"IrX-iV-lPd.title" = "Credits";
+
+/* Class = "UILabel"; text = "unsplash.com"; ObjectID = "JAJ-2V-jd9"; */
+"JAJ-2V-jd9.text" = "unsplash.com";
+
+/* Class = "UITableViewSection"; headerTitle = "Account"; ObjectID = "Jeg-jO-DWo"; */
+"Jeg-jO-DWo.headerTitle" = "Account";
+
+/* Class = "UILabel"; text = "CategoryItems"; ObjectID = "KYx-Qu-iO1"; */
+"KYx-Qu-iO1.text" = "CategoryItems";
+
+/* Class = "UILabel"; text = "Liked Photos"; ObjectID = "M7l-dN-t9j"; */
+"M7l-dN-t9j.text" = "Liked Photos";
+
+/* Class = "UILabel"; text = "Alamofire Oauth2"; ObjectID = "MBM-u9-32X"; */
+"MBM-u9-32X.text" = "Alamofire Oauth2";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "Npd-gA-kno"; */
+"Npd-gA-kno.text" = "Login";
+
+/* Class = "UILabel"; text = "Alamofire"; ObjectID = "PMF-L2-3Pb"; */
+"PMF-L2-3Pb.text" = "Alamofire";
+
+/* Class = "UITabBarItem"; title = "Category"; ObjectID = "PoS-oV-Cyi"; */
+"PoS-oV-Cyi.title" = "Category";
+
+/* Class = "UILabel"; text = "0 %"; ObjectID = "Prv-MP-tIz"; */
+"Prv-MP-tIz.text" = "0 %";
+
+/* Class = "UILabel"; text = "FOCAL LENGTH"; ObjectID = "Qm3-YD-BYD"; */
+"Qm3-YD-BYD.text" = "FOCAL LENGTH";
+
+/* Class = "UILabel"; text = "SDWebImage"; ObjectID = "R4W-nv-Vsc"; */
+"R4W-nv-Vsc.text" = "SDWebImage";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "RNW-BB-5W4"; */
+"RNW-BB-5W4.text" = "- - - -";
+
+/* Class = "UILabel"; text = "(Name)"; ObjectID = "RSe-Qd-paX"; */
+"RSe-Qd-paX.text" = "(Name)";
+
+/* Class = "UITabBarItem"; title = "Collection"; ObjectID = "Rz4-De-I7x"; */
+"Rz4-De-I7x.title" = "Collection";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "ScD-59-w67"; */
+"ScD-59-w67.text" = "User Name";
+
+/* Class = "UILabel"; text = "Support"; ObjectID = "UF2-nY-S8F"; */
+"UF2-nY-S8F.text" = "Support";
+
+/* Class = "UILabel"; text = "This app is made by using following great libraries and services "; ObjectID = "X0E-pv-sWs"; */
+"X0E-pv-sWs.text" = "This app is made by using following great libraries and services ";
+
+/* Class = "UITabBarItem"; title = "User"; ObjectID = "XCj-Kj-hJO"; */
+"XCj-Kj-hJO.title" = "User";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "XNQ-YZ-Nd4"; */
+"XNQ-YZ-Nd4.text" = "Location";
+
+/* Class = "UITableViewSection"; headerTitle = "Personal"; ObjectID = "ZXO-XB-S3I"; */
+"ZXO-XB-S3I.headerTitle" = "Personal";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "ZcK-VT-TMV"; */
+"ZcK-VT-TMV.text" = "- - - -";
+
+/* Class = "UINavigationItem"; title = "FullImage"; ObjectID = "a0E-e5-pgg"; */
+"a0E-e5-pgg.title" = "FullImage";
+
+/* Class = "UILabel"; text = "PUBLISHED ON"; ObjectID = "alE-RR-bp4"; */
+"alE-RR-bp4.text" = "PUBLISHED ON";
+
+/* Class = "UILabel"; text = "MODEL"; ObjectID = "bIE-2N-Ksb"; */
+"bIE-2N-Ksb.text" = "MODEL";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "cGx-EM-i3n"; */
+"cGx-EM-i3n.text" = "User Name";
+
+/* Class = "UILabel"; text = "VIEWS"; ObjectID = "ecb-xi-Qaf"; */
+"ecb-xi-Qaf.text" = "VIEWS";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "ey4-tb-4pC"; */
+"ey4-tb-4pC.text" = "- - - -";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "f1P-0d-iEK"; */
+"f1P-0d-iEK.title" = "Search";
+
+/* Class = "UILabel"; text = "DIMENSIONS"; ObjectID = "fVy-M6-i0i"; */
+"fVy-M6-i0i.text" = "DIMENSIONS";
+
+/* Class = "UILabel"; text = "CRMotionView"; ObjectID = "h9p-Wp-kaG"; */
+"h9p-Wp-kaG.text" = "CRMotionView";
+
+/* Class = "UILabel"; text = "DOWNLOADS"; ObjectID = "kYB-7V-PS4"; */
+"kYB-7V-PS4.text" = "DOWNLOADS";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "lNb-A6-JiX"; */
+"lNb-A6-JiX.title" = "Profile";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "mXA-Od-9uy"; */
+"mXA-Od-9uy.text" = "Email";
+
+/* Class = "UILabel"; text = "UserNameUserNameUse"; ObjectID = "nev-1r-DBr"; */
+"nev-1r-DBr.text" = "UserNameUserNameUse";
+
+/* Class = "UILabel"; text = "IOS"; ObjectID = "qHX-cJ-vJ3"; */
+"qHX-cJ-vJ3.text" = "IOS";
+
+/* Class = "UILabel"; text = "Credits"; ObjectID = "rLQ-00-BEA"; */
+"rLQ-00-BEA.text" = "Credits";
+
+/* Class = "UINavigationItem"; title = "Category"; ObjectID = "rPT-Do-7Rg"; */
+"rPT-Do-7Rg.title" = "Category";
+
+/* Class = "UILabel"; text = "Open Instagram"; ObjectID = "rY3-bX-r5f"; */
+"rY3-bX-r5f.text" = "Open Instagram";
+
+/* Class = "UILabel"; text = "MAKE"; ObjectID = "rgy-hN-LiQ"; */
+"rgy-hN-LiQ.text" = "MAKE";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "tk9-Wj-pB0"; */
+"tk9-Wj-pB0.text" = "- - - -";
+
+/* Class = "UILabel"; text = "He was born on a very cold day,He was born on a very cold day"; ObjectID = "uOL-2k-tVD"; */
+"uOL-2k-tVD.text" = "He was born on a very cold day,He was born on a very cold day";
+
+/* Class = "UILabel"; text = "APERTURE"; ObjectID = "wGn-Rr-ZZE"; */
+"wGn-Rr-ZZE.text" = "APERTURE";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "wsy-EE-6Y7"; */
+"wsy-EE-6Y7.text" = "- - - -";
+
+/* Class = "UILabel"; text = "icons8.com"; ObjectID = "xp7-MP-zII"; */
+"xp7-MP-zII.text" = "icons8.com";
+
+/* Class = "UILabel"; text = "- - - -"; ObjectID = "yvn-Ql-wXu"; */
+"yvn-Ql-wXu.text" = "- - - -";
