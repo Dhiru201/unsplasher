@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="UserHeader" customModule="Unsplasher" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YYC-Bo-79g">
+                    <rect key="frame" x="123" y="0.0" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="AHO-rv-10e"/>
+                        <constraint firstAttribute="width" constant="75" id="df1-yX-LK5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zKY-9w-jv7">
+                    <rect key="frame" x="20" y="80" width="280" height="22.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-td-VuO">
+                    <rect key="frame" x="8" y="131" width="304" height="67.5"/>
+                    <string key="text">Principal designer at @adobe, blogger @subtraction, design chair @wildcard, co-founder @kidpostapp, ex-design director @nytimes.</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Phz-sh-XOb">
+                    <rect key="frame" x="20" y="107" width="280" height="19"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Phz-sh-XOb" firstAttribute="top" secondItem="zKY-9w-jv7" secondAttribute="bottom" constant="5" id="21o-q4-zbE"/>
+                <constraint firstItem="zKY-9w-jv7" firstAttribute="top" secondItem="YYC-Bo-79g" secondAttribute="bottom" constant="5" id="7dT-vH-tzG"/>
+                <constraint firstAttribute="trailing" secondItem="zAa-td-VuO" secondAttribute="trailing" constant="8" id="Mof-rw-WYD"/>
+                <constraint firstItem="YYC-Bo-79g" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="123" id="Nwb-fb-Ewr"/>
+                <constraint firstItem="zKY-9w-jv7" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="Oil-fv-0iH"/>
+                <constraint firstAttribute="trailing" secondItem="Phz-sh-XOb" secondAttribute="trailing" constant="20" id="Oud-2y-Kz3"/>
+                <constraint firstAttribute="trailing" secondItem="YYC-Bo-79g" secondAttribute="trailing" constant="122" id="Vbv-2v-EsD"/>
+                <constraint firstAttribute="trailing" secondItem="zKY-9w-jv7" secondAttribute="trailing" constant="20" id="ckj-gj-Goo"/>
+                <constraint firstItem="zAa-td-VuO" firstAttribute="top" secondItem="Phz-sh-XOb" secondAttribute="bottom" constant="5" id="oBL-r7-4fa"/>
+                <constraint firstItem="YYC-Bo-79g" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="oqZ-tL-K6g"/>
+                <constraint firstItem="Phz-sh-XOb" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="ux8-BY-351"/>
+                <constraint firstItem="zAa-td-VuO" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="yVV-3H-f4P"/>
+            </constraints>
+            <connections>
+                <outlet property="userBio" destination="zAa-td-VuO" id="TaP-jf-ovt"/>
+                <outlet property="userImage" destination="YYC-Bo-79g" id="Zxe-Nk-GH3"/>
+                <outlet property="userLocation" destination="Phz-sh-XOb" id="kZ5-Nk-6LZ"/>
+                <outlet property="userName" destination="zKY-9w-jv7" id="xCW-c1-1wf"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
