@@ -24,15 +24,26 @@ class UserTableViewController: UITableViewController, MFMailComposeViewControlle
   var user: User?
   var instagram: String?
 
-  override func viewDidLoad() {
-      super.viewDidLoad()
-      self.hideUserDetails()
-      self.getUser()
-      self.tableView.showsVerticalScrollIndicator = false
-      self.clearsSelectionOnViewWillAppear = true
-  }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.sizeHeaderToFit()
+        self.hideUserDetails()
+        self.getUser()
+        self.tableView.showsVerticalScrollIndicator = false
+        self.clearsSelectionOnViewWillAppear = true
+    }
   
-  
+    func sizeHeaderToFit() {
+        let headerView = self.tableView.tableHeaderView!
+        var headerHeight: CGFloat!
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            headerHeight = 400
+        }else{
+            headerHeight = 195
+        }
+        headerView.frame = CGRect(x: 0, y: 0, width: headerView.frame.width, height: headerHeight)
+    }
+
   func getUser(){
     if LoginManager.showLoginAlert(){
       self.setLogoutView()
@@ -53,7 +64,8 @@ class UserTableViewController: UITableViewController, MFMailComposeViewControlle
       }
     })
       }
-
+    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -202,7 +214,7 @@ class UserTableViewController: UITableViewController, MFMailComposeViewControlle
     self.nickName.text = user.name
     self.userEmail.text = user.email
     self.bio.text = user.bio
-    let url = URL(string: user.userImage)
+    let url = URL(string: self.urlSelector())
     self.userImage.sd_setImage(with: url, completed:{
       image, error, imageCacheType, imageUrl in
       self.userImage.toCircle()
@@ -214,6 +226,19 @@ class UserTableViewController: UITableViewController, MFMailComposeViewControlle
     self.tableView.reloadData()
   }
   
+    func urlSelector()->String{
+        let url:String
+        let horizontalClass = self.traitCollection.horizontalSizeClass
+        let verticalClass = self.traitCollection.verticalSizeClass
+        if (horizontalClass == UIUserInterfaceSizeClass.regular) && (verticalClass == UIUserInterfaceSizeClass.regular){
+            url = (user?.userLargeProfileImage)!
+        }else{
+            url = (user?.userImage)!
+        }
+        return url
+    }
+
+    
   func logOut(){
     LoginManager.logout()
     self.setLogoutView()

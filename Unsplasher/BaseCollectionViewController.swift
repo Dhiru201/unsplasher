@@ -21,7 +21,6 @@ class BaseCollectionViewController: UICollectionViewController {
   var loadedTill = 0
 
   func fetchImages(page: Int) -> Void{
-    
     Photo.fetchData(url: self.url!, page: page, query: self.query, callback: {
       photos, error in
       if error != nil{
@@ -67,14 +66,13 @@ class BaseCollectionViewController: UICollectionViewController {
     return cell
   }
   
-  
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     self.collectionView?.deselectItem(at: indexPath, animated: false)
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let vc = storyboard.instantiateViewController(withIdentifier: "zoomview") as! ZoomViewController
     vc.zoomImage = self.images[indexPath.item]
     vc.name = self.images[indexPath.item].user.username
-    vc.profileImageURL = self.images[indexPath.item].user.userImage
+    vc.profileImageURL =  self.getUserImageUrl(user: self.images[indexPath.item].user)
     vc.bio = self.images[indexPath.item].user.bio
     vc.username = self.images[indexPath.item].user.name
     vc.location = self.images[indexPath.item].user.location
@@ -99,4 +97,12 @@ class BaseCollectionViewController: UICollectionViewController {
     self.collectionView?.reloadData()
     self.refreshCtrl.endRefreshing()
   }
+
+	private func getUserImageUrl(user:User)-> String{
+		if UIDevice.current.userInterfaceIdiom == .pad{
+			return user.userLargeProfileImage
+		}else{
+			return user.userImage
+		}
+	}
 }

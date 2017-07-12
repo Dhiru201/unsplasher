@@ -35,17 +35,17 @@ class ZoomViewController: UIViewController, MFMailComposeViewControllerDelegate{
     @IBOutlet weak var iso: UILabel!
     @IBOutlet weak var publishedOn: UILabel!
     
-  var zoomImage: Photo!
-  var motionView:CRMotionView!
-  var isLiked:Bool = false
-  var username:String!
-  var name:String!
-  var profileImageURL:String!
-  var location:String!
-  var bio:String!
-  var tabShowing = false
-  var id:String!
-  var data:[Any] = []
+    var zoomImage: Photo!
+    var motionView:CRMotionView!
+    var isLiked:Bool = false
+    var username:String!
+    var name:String!
+    var profileImageURL:String!
+    var location:String!
+    var bio:String!
+    var tabShowing = false
+    var id:String!
+    var isDataFetched:Bool = false
     
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -61,7 +61,6 @@ class ZoomViewController: UIViewController, MFMailComposeViewControllerDelegate{
     self.navigationController?.hidesBarsOnSwipe = true
     motionView = CRMotionView(frame: self.view.frame)
     self.view.addSubview(motionView!)
-    self.navigationItem.title = "Full Image"
     updateImage(motionView!)
     let gesture = UITapGestureRecognizer(target: self, action: #selector(ZoomViewController.toggleMotion))
     self.view.addGestureRecognizer(gesture)
@@ -168,7 +167,7 @@ class ZoomViewController: UIViewController, MFMailComposeViewControllerDelegate{
   func configuredMailComposeViewController() -> MFMailComposeViewController {
     let mailComposerVC = MFMailComposeViewController()
     mailComposerVC.mailComposeDelegate = self
-    mailComposerVC.setToRecipients(Constants.mailReport)
+    mailComposerVC.setToRecipients(Constants.unsplashSupportEmail)
     mailComposerVC.setSubject("Report photo abuse")
     mailComposerVC.setMessageBody("Hi Unsplash support \n \n The following photo may be an objectionable content. \n Could you please have a look to the photo? \n \n photo url : \(self.zoomImage.smallUrl)", isHTML: false)
     
@@ -248,11 +247,14 @@ class ZoomViewController: UIViewController, MFMailComposeViewControllerDelegate{
     if tabShowing {
    self.infoView.isHidden = true
     }else{
-        self.fetchImageInfo()
-     //   self.infoView.isHidden = false
-    }
+        if self.isDataFetched == true {
+            self.infoView.isHidden = false
+        }else{
+            self.fetchImageInfo()
+            }
+        }
     tabShowing = !tabShowing
-  }
+    }
     
     func setInfo(_ info: PhotoInfo){
         if info.downloads != nil {
@@ -315,6 +317,7 @@ class ZoomViewController: UIViewController, MFMailComposeViewControllerDelegate{
         }else{
             if result != nil {
                 self.setInfo(result!)
+                self.isDataFetched = true
                 self.infoView.isHidden = false
             }else{
                 Alert.warning(message:"No Image Info Found" )
