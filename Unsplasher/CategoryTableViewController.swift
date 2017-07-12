@@ -26,10 +26,8 @@ class CategoryTableViewController: UITableViewController {
     self.refreshControl?.attributedTitle = NSAttributedString(string: "Reloading", attributes: [NSForegroundColorAttributeName: UIColor(netHex: Constants.themeColor)])
     self.refreshControl?.tintColor = UIColor(netHex: Constants.themeColor)
     self.refreshControl?.addTarget(self, action: #selector(self.refresh), for: UIControlEvents.valueChanged)
-
-    
   }
-  
+    
   func refresh(_ sender:AnyObject){
     self.categoryList.removeAll()
     self.fetchCattegoryList()
@@ -79,6 +77,24 @@ class CategoryTableViewController: UITableViewController {
     cell.catData = self.categoryList[indexPath.row]
     return cell
   }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return self.cellSize();//Choose your custom row height
+    }
+    
+    func cellSize()-> CGFloat {
+        let cellHeight:CGFloat
+        let horizontalClass = self.traitCollection.horizontalSizeClass
+        let verticalClass = self.traitCollection.verticalSizeClass
+        if (horizontalClass == UIUserInterfaceSizeClass.regular) && (verticalClass == UIUserInterfaceSizeClass.regular){
+             cellHeight = 120.0
+        }else{
+            cellHeight = 65.0
+        }
+        return cellHeight
+    }
+
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     self.tableView.deselectRow(at: indexPath, animated: false)
     let storyboard = UIStoryboard(name: "Main", bundle: nil)

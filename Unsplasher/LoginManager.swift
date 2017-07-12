@@ -27,7 +27,6 @@ class LoginManager {
   
   static func login(callback: @escaping (User?, Error?) -> Void){
       UsingOauth2(LoginManager.oauthSetting(), performWithToken: { token in
-        print(token)
         URLHelper.get(url: Constants.meURL, parameters: nil, headers: ["Authorization": "Bearer \(token)"], callback: {
           response in
           if response.error != nil{

@@ -35,10 +35,10 @@ class Constants{
   static let meURL:String = "/me"
   
   class var supportMailRecepient : [String]{
-    return ["applers.in@gmail.com"]
+    return ["support@ispro.in"]
   }
   
-  class var mailReport : [String]{
+  class var unsplashSupportEmail : [String]{
     return ["support@unsplash.com"]
   }
   
