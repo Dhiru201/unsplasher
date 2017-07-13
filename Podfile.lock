@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (4.4.0)
+  - Alamofire (4.5.0)
   - AlamofireOauth2 (2.0.1):
     - Alamofire
     - KeychainAccess
-  - Crashlytics (3.8.4):
+  - Crashlytics (3.8.5):
     - Fabric (~> 1.6.3)
   - CRMotionView (0.3.1)
   - EZAlertController (3.2)
-  - Fabric (1.6.11)
+  - Fabric (1.6.12)
   - KeychainAccess (3.0.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -23,15 +23,15 @@ DEPENDENCIES:
   - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireOauth2: f3f58d52bdac4c0340181d32ae7d9eaa4c5ed84b
-  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
   CRMotionView: da2a88ec98e5991f94bdeea3cd8fe30db2808e4b
   EZAlertController: 633be01320bed47720be54054df47667d61c2481
-  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
   KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: d0f5c78960fcfaea6306b8f3a0440196ecadf033
+PODFILE CHECKSUM: a0b069a904232fcc7c5b84577239a2325d27aeb9
 
 COCOAPODS: 1.2.1
