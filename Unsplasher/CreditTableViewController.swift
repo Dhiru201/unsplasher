@@ -53,11 +53,8 @@ class CreditTableViewController: UITableViewController {
       UIApplication.shared.open(URL(string: url)!)
     }
     self.tableView.deselectRow(at: indexPath, animated: false)
-    
-    
+	
    }
-  
-  
   
   override func numberOfSections(in tableView: UITableView) -> Int {
     // #warning Incomplete implementation, return the number of sections

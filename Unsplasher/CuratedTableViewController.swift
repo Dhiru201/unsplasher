@@ -35,7 +35,7 @@ class CuratedTableViewController: UITableViewController {
     self.tableView?.showsVerticalScrollIndicator = false
     self.setSegmentedControl()
     self.fetchCollectionList(page:self.currentPage)
-    self.tableView.estimatedSectionHeaderHeight = 40.0
+    self.tableView.estimatedSectionHeaderHeight = 35
     self.tableView.rowHeight = UITableViewAutomaticDimension
     self.tableView.estimatedRowHeight = 300
 
@@ -59,7 +59,7 @@ class CuratedTableViewController: UITableViewController {
   }
   
   func setSegmentedControl(){
-    self.segmentedControl = UISegmentedControl(frame: CGRect(x: 0, y: (self.navigationController?.navigationBar.frame.size.height)! + 20, width: self.view.frame.width, height: 40))
+    self.segmentedControl = UISegmentedControl(frame: CGRect(x: 0, y: (self.navigationController?.navigationBar.frame.size.height)! + 20, width: self.view.frame.width, height: 35))
     self.segmentedControl.insertSegment(withTitle: "All", at: 0, animated: false)
     self.segmentedControl.insertSegment(withTitle: "Curated", at: 1, animated: false)
     self.segmentedControl.insertSegment(withTitle: "Featured", at: 2, animated: false)
