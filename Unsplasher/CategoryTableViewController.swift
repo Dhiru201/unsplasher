@@ -27,6 +27,12 @@ class CategoryTableViewController: UITableViewController {
     self.refreshControl?.tintColor = UIColor(netHex: Constants.themeColor)
     self.refreshControl?.addTarget(self, action: #selector(self.refresh), for: UIControlEvents.valueChanged)
   }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		self.navigationController?.isNavigationBarHidden = false
+		self.navigationController?.hidesBarsOnSwipe = false
+		self.tableView.reloadData()
+	}
     
   func refresh(_ sender:AnyObject){
     self.categoryList.removeAll()

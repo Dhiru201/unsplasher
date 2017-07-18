@@ -14,7 +14,6 @@ PODS:
   - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
   - AlamofireOauth2
   - Crashlytics
   - CRMotionView
@@ -32,6 +31,6 @@ SPEC CHECKSUMS:
   KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: a0b069a904232fcc7c5b84577239a2325d27aeb9
+PODFILE CHECKSUM: a1d2cd8e4ba87b439135abdd14982535916420c6
 
 COCOAPODS: 1.2.1

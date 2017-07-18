@@ -21,8 +21,8 @@ class CategoryTableViewCell: UITableViewCell {
   }
   func updateCell() {
     self.catName.text = self.catData.title
-    self.catName.textColor = UIColor(netHex: Constants.themeColor)
+    self.catName.textColor = UIColor.black
     self.imageCount.text = "\(self.catData.photo_count) Photos"
-    self.imageCount.textColor = UIColor.black
+    self.imageCount.textColor = UIColor(netHex: Constants.themeColor)
   }
 }
