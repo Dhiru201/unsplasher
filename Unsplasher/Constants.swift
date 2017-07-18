@@ -54,7 +54,7 @@ class Constants{
 
   
   class var clientSecret: String{
-    return "***REMOVED***"
+    return "39c5f6796444850d7a11a54769c2804f695a1e20e9bdfe246abab4a53e906427"
   }
   
   class func userLikeURL(_ username: String) -> String{

@@ -26,13 +26,15 @@ class UserTableViewController: UITableViewController, MFMailComposeViewControlle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		self.navigationController?.isNavigationBarHidden = false
         self.sizeHeaderToFit()
         self.hideUserDetails()
         self.getUser()
         self.tableView.showsVerticalScrollIndicator = false
         self.clearsSelectionOnViewWillAppear = true
     }
-  
+	
+	
     func sizeHeaderToFit() {
         let headerView = self.tableView.tableHeaderView!
         var headerHeight: CGFloat!
@@ -153,6 +155,7 @@ class UserTableViewController: UITableViewController, MFMailComposeViewControlle
     default:
     break;
   }
+	self.tableView.deselectRow(at: indexPath, animated: false)
   }
 
   func likedPhotos(){
@@ -168,7 +171,7 @@ class UserTableViewController: UITableViewController, MFMailComposeViewControlle
       let url = "https://www.instagram.com/\(user)"
       if UIApplication.shared.canOpenURL(URL(string: url)!) {
         UIApplication.shared.open(URL(string: url)!)
-      }
+		}
     }
   }
   

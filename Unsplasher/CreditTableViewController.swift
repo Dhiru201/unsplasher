@@ -12,6 +12,8 @@ class CreditTableViewController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+	self.navigationController?.isNavigationBarHidden = false
+	self.navigationController?.hidesBarsOnSwipe = false
     self.tableView?.showsVerticalScrollIndicator = false
     self.tableView.tableFooterView = UIView(frame: CGRect.zero)
   }
