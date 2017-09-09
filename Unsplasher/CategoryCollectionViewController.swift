@@ -11,9 +11,10 @@ import UIKit
 private let reuseIdentifier = "CategoryCell"
 
 class CategoryCollectionViewController: BaseCollectionViewController {
-  var categoryID: Int?
-  var navtitle: String!
-  var loadTill = 0
+	
+	var categoryID: Int?
+	var navtitle: String!
+	var loadTill = 0
 
   @IBOutlet weak var activity: UIActivityIndicatorView!
 

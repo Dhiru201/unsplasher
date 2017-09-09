@@ -81,7 +81,7 @@ class CategoryTableViewController: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoryTableViewCell
     cell.backgroundColor = UIColor(netHex: Constants.userBaseColor)
     cell.catData = self.categoryList[indexPath.row]
-    return cell
+	return cell
   }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
@@ -109,5 +109,4 @@ class CategoryTableViewController: UITableViewController {
     vc.navtitle = self.categoryList[indexPath.row].title
     self.navigationController?.pushViewController(vc, animated: true)
   }
-  
 }

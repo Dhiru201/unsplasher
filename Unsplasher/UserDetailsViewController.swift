@@ -36,7 +36,9 @@ class UserDetailsViewController: UIViewController , UITableViewDelegate, UITable
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.deviceSetup()
+		self.navigationController?.isNavigationBarHidden = false
 		self.navigationController?.hidesBarsOnSwipe = false
+		self.userImageView.showsVerticalScrollIndicator = false
 		self.navigationItem.title = self.username
 		self.userCollectionList.removeAll()
 		self.photoList.removeAll()
@@ -46,7 +48,10 @@ class UserDetailsViewController: UIViewController , UITableViewDelegate, UITable
 		self.fetchUserPhotos(page: self.currentPage)
 		self.setSegmentedControl()
 	}
-	
+	override func viewWillAppear(_ animated: Bool) {
+		self.navigationController?.isNavigationBarHidden = false
+		self.navigationController?.hidesBarsOnSwipe = false
+	}
 
 	func deviceSetup(){
 		self.headerLabelAlingment()
