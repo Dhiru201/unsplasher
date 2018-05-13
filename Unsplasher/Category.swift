@@ -22,6 +22,7 @@ class Category {
     var result:[Category] = []
     URLHelper.get(url: url,  parameters: ["client_id": Constants.clientId], headers: nil, callback: {
       response in
+		print("response", response)
       if response.error != nil{
         callback(nil, response.error)
       }else{
@@ -33,3 +34,4 @@ class Category {
     })
   }
 }
+

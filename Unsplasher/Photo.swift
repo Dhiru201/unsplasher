@@ -24,8 +24,7 @@ class Photo {
     self.regularUrl = (data["urls"] as! Dictionary<String, String>)["regular"]!
     self.thumbUrl = (data["urls"] as! Dictionary<String, String>)["thumb"]!
     self.user = User(data:data["user"] as! Dictionary<String,Any>)
-    
-    }
+}
   
   
   func like(callback: @escaping (DataResponse<Any>?) -> Void){

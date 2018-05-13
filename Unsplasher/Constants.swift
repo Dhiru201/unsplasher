@@ -17,7 +17,9 @@ enum UIUserInterfaceIdiom : Int {
 class Constants{
   
   static let clientId: String = "90334052674bd4c0f86e88de0b15d6f74ecf0c7e89a62a3f00dd2422f749122f"
-  
+	
+  static let appName:String = "unsplasher"
+	
   static let baseURL: String = "https://api.unsplash.com"
   
   static let categoryURL:String = "/categories"
@@ -68,7 +70,11 @@ class Constants{
   class func photoInfo(_ id: String) -> String{
         return "/photos/\(id)"
     }
-    
+	
+  class func userWebPageURL(_ username: String) -> String{
+	  return "https://unsplash.com/\(username)?utm_source=unsplasher&utm_medium=referral"
+	
+  }
   class var scope: String{
     return "public+read_user+write_user+read_photos+write_photos+write_likes"
   }

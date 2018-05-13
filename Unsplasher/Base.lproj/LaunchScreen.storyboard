@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Light</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -26,63 +19,54 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="fgQ-hu-8Fr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Unsplasher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08l-cK-3O6">
-                                <rect key="frame" x="22" y="70" width="231.5" height="38.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLx-Xv-Jb5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.9279484160958904" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful, free images gifted by the world’s most generous community of photographers." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uq-j8-Qe0">
+                                <rect key="frame" x="46" y="443" width="283" height="55.666666666666686"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exposure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08l-cK-3O6">
+                                <rect key="frame" x="83" y="379" width="210" height="54"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="44"/>
                                 <color key="textColor" red="0.98431372549999996" green="0.17254901959999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unofficial unsplash client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWV-Sb-rTa">
-                                <rect key="frame" x="22" y="113.5" width="190" height="21.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
+                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="54"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4Uq-j8-Qe0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="5XE-UU-3vK"/>
                             <constraint firstAttribute="trailing" secondItem="fgQ-hu-8Fr" secondAttribute="trailing" id="95O-zY-btp"/>
+                            <constraint firstItem="08l-cK-3O6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AZK-yb-i4Y"/>
                             <constraint firstItem="fgQ-hu-8Fr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="DyS-fZ-HLW"/>
-                            <constraint firstItem="hWV-Sb-rTa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="22" id="FYf-tX-ZKb">
-                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
-                            </constraint>
-                            <constraint firstItem="08l-cK-3O6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="22" id="GZ5-B1-1rU">
-                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
-                            </constraint>
+                            <constraint firstItem="xLx-Xv-Jb5" firstAttribute="trailing" secondItem="fgQ-hu-8Fr" secondAttribute="trailing" id="GxI-Fe-IR9"/>
+                            <constraint firstItem="xLx-Xv-Jb5" firstAttribute="leading" secondItem="fgQ-hu-8Fr" secondAttribute="leading" id="QCy-bX-bYf"/>
                             <constraint firstItem="fgQ-hu-8Fr" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="R5Q-yx-K2V"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fgQ-hu-8Fr" secondAttribute="bottom" id="V0t-0h-ieA"/>
-                            <constraint firstItem="08l-cK-3O6" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="50" id="gVa-ns-guD">
-                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
-                            </constraint>
-                            <constraint firstItem="hWV-Sb-rTa" firstAttribute="top" secondItem="08l-cK-3O6" secondAttribute="bottom" constant="5" id="nDu-Hh-1qt">
-                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Uq-j8-Qe0" secondAttribute="trailing" constant="30" id="eHK-GO-f4H"/>
+                            <constraint firstItem="4Uq-j8-Qe0" firstAttribute="top" secondItem="08l-cK-3O6" secondAttribute="bottom" constant="10" id="fhu-9w-EFS"/>
+                            <constraint firstItem="08l-cK-3O6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hTk-4R-qFb"/>
+                            <constraint firstItem="4Uq-j8-Qe0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kbz-SH-jCC"/>
+                            <constraint firstAttribute="bottom" secondItem="xLx-Xv-Jb5" secondAttribute="bottom" id="mLe-6n-49o"/>
+                            <constraint firstItem="xLx-Xv-Jb5" firstAttribute="top" secondItem="fgQ-hu-8Fr" secondAttribute="top" id="psm-bd-VH6"/>
                         </constraints>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="GZ5-B1-1rU"/>
-                                <include reference="gVa-ns-guD"/>
-                                <include reference="FYf-tX-ZKb"/>
-                                <include reference="nDu-Hh-1qt"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13.6" y="233.43328335832086"/>
+            <point key="canvasLocation" x="-13.6" y="232.75862068965517"/>
         </scene>
     </scenes>
     <resources>

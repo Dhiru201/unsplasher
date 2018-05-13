@@ -59,7 +59,12 @@ class CuratedTableViewController: UITableViewController {
   }
   
   func setSegmentedControl(){
-    self.segmentedControl = UISegmentedControl(frame: CGRect(x: 0, y: (self.navigationController?.navigationBar.frame.size.height)! + 20, width: self.view.frame.width, height: 35))
+	let screenSize = UIScreen.main.bounds
+	if screenSize.height == 812 {
+		 self.segmentedControl = UISegmentedControl(frame: CGRect(x: 0, y: 88, width: self.view.frame.width, height: 35))
+	} else {
+    	self.segmentedControl = UISegmentedControl(frame: CGRect(x: 0, y: (self.navigationController?.navigationBar.frame.size.height)! + 20, width: self.view.frame.width, height: 35))
+	}
     self.segmentedControl.insertSegment(withTitle: "All", at: 0, animated: false)
     self.segmentedControl.insertSegment(withTitle: "Curated", at: 1, animated: false)
     self.segmentedControl.insertSegment(withTitle: "Featured", at: 2, animated: false)

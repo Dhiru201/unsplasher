@@ -13,7 +13,6 @@ class CategoryTableViewCell: UITableViewCell {
   @IBOutlet var imageCount: UILabel!
   @IBOutlet var catName: UILabel!
   
-  
   var catData:Category! {
     didSet {
       updateCell()

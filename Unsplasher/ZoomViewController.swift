@@ -12,7 +12,11 @@ import CRMotionView
 import MessageUI
 
 class ZoomViewController: UIViewController, MFMailComposeViewControllerDelegate{
-  @IBOutlet weak var infoView: UIView!
+	
+	
+	@IBAction func userImageButton(_ sender: Any) {self.toUserDetails()}
+	@IBAction func userNameButton(_ sender: Any) {self.toWebSite()}
+	@IBOutlet weak var infoView: UIView!
   @IBOutlet weak var infoButtonView: UIView!
   @IBOutlet weak var baseImage: UIImageView!
   @IBOutlet var progressLabel: UILabel!
@@ -50,14 +54,19 @@ class ZoomViewController: UIViewController, MFMailComposeViewControllerDelegate{
   override func viewDidLoad() {
     super.viewDidLoad()
     self.infoView.isHidden = true
-    let tap = UITapGestureRecognizer(target: self, action: #selector(ZoomViewController.toUserDetails))
-    self.userView.addGestureRecognizer(tap)
     self.userImage.toCircle()
     self.downloadProfilePic()
     self.userView.backgroundColor = UIColor.white.withAlphaComponent(0.7)
     self.bottomView.isHidden = true
     self.infoButtonView.isHidden = true
-    self.userName.text = self.name
+	self.userName.textColor = UIColor.black
+	self.userName.layer.cornerRadius = 6
+	self.userName.layer.borderColor = UIColor.lightGray.cgColor
+	self.userName.layer.borderWidth = 1.0
+	if let username = self.name {
+		let string = "Photo by \(username) on Unsplash"
+		self.userName.attributedText = multiColorString(string: string, usernameLength: username.count)
+	}
     self.navigationController?.hidesBarsOnSwipe = true
     motionView = CRMotionView(frame: self.view.frame)
     self.view.addSubview(motionView!)
@@ -75,6 +84,28 @@ class ZoomViewController: UIViewController, MFMailComposeViewControllerDelegate{
       self.Like.setImage(#imageLiteral(resourceName: "LikeFill"), for: UIControlState())
     }
 }
+	
+	func multiColorString(string:String, usernameLength: Int)-> NSMutableAttributedString{
+		var mutableString = NSMutableAttributedString()
+		let font = UIFont(name: "AmericanTypewriter-Semibold", size: 17.0)
+		mutableString = NSMutableAttributedString(string: string, attributes: [NSFontAttributeName: font!])
+		
+		mutableString.addAttribute(
+			NSForegroundColorAttributeName,
+			value: UIColor.red,
+			range: NSRange(
+				location:9,
+				length:usernameLength))
+		return mutableString
+	}
+
+	
+	func toWebSite(){
+		let url = Constants.userWebPageURL(name)
+		if UIApplication.shared.canOpenURL(URL(string:url)!) {
+			UIApplication.shared.open(URL(string: url)!)
+		}
+	}
   
   func toggleMotion(){
     if self.motionView.isHidden{

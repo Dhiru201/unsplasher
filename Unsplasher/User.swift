@@ -41,3 +41,4 @@ class User{
         self.likePhotos = (data["links"]as! Dictionary<String, String>)["photos"]
     }
 }
+

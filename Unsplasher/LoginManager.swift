@@ -66,8 +66,7 @@ class LoginManager {
   class func isLoggedin() -> Bool{
       return !(self.showLoginAlert())
   }
-  
-  }
+}
 
 
 
